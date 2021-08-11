@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Registro de Pedidos</title>
+</head>
+<body>
+    <h1>SISTEMA DE PEDIDOS</h1>
+
+    <h3>Ingrese los datos de su pedido por favor</h3>
+
+    <form id="ingpedido">
+        <label for="nomproducto">Nombre del producto</label>
+        <input type="text" id="nomproducto" name="nombre[]" required> <br>
+
+        <label for="$producto">Precio</label>
+        <input type="text" id="$producto" name="precio[]" required> <br>
+
+        <label for="cantproducto">Cantidad</label>
+        <input type="number" id="cantproducto" name="cantidad[]" required> <br>
+
+        <input type="button" id="add" name="add" value="Agregar otro producto mas">
+		<input type="submit" name="save" value="Ingresar pedido">
+    </form>
+
+    <form id="calcpedido">
+        <input name="idpedido" type="text">
+        <input name="calc" type="submit">
+    </form>
+
+    <div id="RESULTADO">
+        <p></p>
+    </div>
+	
+</body>
+
+<script src="Cliente.js" defer></script>
+
+</html>
